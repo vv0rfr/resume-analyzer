@@ -1,0 +1,898 @@
+[
+  {
+    "job_id": "java_backend",
+    "title": "Java后端开发工程师",
+    "category": "后端开发",
+    "core_skills": ["Java", "Spring Boot", "MySQL", "Redis", "微服务"],
+    "nice_to_have": ["Docker", "Kubernetes", "消息队列", "分布式系统", "Elasticsearch", "MyBatis"],
+    "description": "负责服务端业务逻辑开发、API设计、数据库设计与优化，参与系统架构设计",
+    "typical_titles": ["Java开发", "Java工程师", "后端工程师", "服务端开发"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "编码基础、学习能力"},
+      "mid": {"years": "2-5年", "focus": "独立负责模块、技术深度"},
+      "senior": {"years": "5年+", "focus": "架构设计、技术决策、团队协作"}
+    }
+  },
+  {
+    "job_id": "go_backend",
+    "title": "Go后端开发工程师",
+    "category": "后端开发",
+    "core_skills": ["Go", "gRPC", "MySQL", "Redis", "微服务"],
+    "nice_to_have": ["Docker", "Kubernetes", "Kafka", "分布式系统", "Elasticsearch"],
+    "description": "使用Go语言进行高并发服务端开发，负责微服务架构设计与实现",
+    "typical_titles": ["Go开发", "Go工程师", "Golang开发", "后端工程师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "Go基础语法、简单CRUD开发"},
+      "mid": {"years": "2-5年", "focus": "独立负责服务、性能优化"},
+      "senior": {"years": "5年+", "focus": "高并发架构、分布式系统设计"}
+    }
+  },
+  {
+    "job_id": "python_backend",
+    "title": "Python后端开发工程师",
+    "category": "后端开发",
+    "core_skills": ["Python", "Django/Flask/FastAPI", "MySQL", "Redis", "RESTful API"],
+    "nice_to_have": ["Docker", "Celery", "消息队列", "微服务", "PostgreSQL"],
+    "description": "使用Python进行Web后端开发，负责API设计、数据处理与业务逻辑实现",
+    "typical_titles": ["Python开发", "Python工程师", "后端工程师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "Python基础、框架使用"},
+      "mid": {"years": "2-5年", "focus": "系统设计、性能调优"},
+      "senior": {"years": "5年+", "focus": "架构设计、技术选型"}
+    }
+  },
+  {
+    "job_id": "fullstack",
+    "title": "全栈开发工程师",
+    "category": "全栈开发",
+    "core_skills": ["JavaScript/TypeScript", "React/Vue/Angular", "Node.js/Java/Python", "MySQL", "RESTful API"],
+    "nice_to_have": ["Docker", "云服务", "CI/CD", "GraphQL", "Redis"],
+    "description": "同时负责前端和后端开发，能够独立完成完整功能模块的设计与实现",
+    "typical_titles": ["全栈工程师", "全栈开发", "Full Stack Developer"],
+    "levels": {
+      "junior": {"years": "0-3年", "focus": "前后端基础开发"},
+      "mid": {"years": "3-6年", "focus": "独立负责完整功能模块"},
+      "senior": {"years": "6年+", "focus": "全栈架构设计、技术决策"}
+    }
+  },
+  {
+    "job_id": "frontend",
+    "title": "前端开发工程师",
+    "category": "前端开发",
+    "core_skills": ["JavaScript", "TypeScript", "React/Vue", "HTML/CSS", "前端工程化"],
+    "nice_to_have": ["Node.js", "Webpack/Vite", "小程序开发", "WebGL/Canvas", "性能优化"],
+    "description": "负责Web前端界面开发、用户体验优化、前端工程化建设",
+    "typical_titles": ["前端开发", "前端工程师", "Web前端", "React/Vue开发"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "页面还原、组件开发"},
+      "mid": {"years": "2-5年", "focus": "复杂交互、性能优化"},
+      "senior": {"years": "5年+", "focus": "前端架构、工程化体系"}
+    }
+  },
+  {
+    "job_id": "mobile",
+    "title": "移动端开发工程师",
+    "category": "移动开发",
+    "core_skills": ["Swift/Kotlin", "iOS/Android", "移动UI开发", "网络编程", "性能优化"],
+    "nice_to_have": ["Flutter/React Native", "小程序", "跨平台框架", "App发布"],
+    "description": "负责iOS或Android移动应用开发，包括界面实现、性能优化和应用发布",
+    "typical_titles": ["iOS开发", "Android开发", "移动端工程师", "App开发"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "界面开发、基础功能实现"},
+      "mid": {"years": "2-5年", "focus": "复杂功能、性能调优"},
+      "senior": {"years": "5年+", "focus": "架构设计、技术选型"}
+    }
+  },
+  {
+    "job_id": "data_engineer",
+    "title": "数据工程师",
+    "category": "数据开发",
+    "core_skills": ["Python/Java/Scala", "SQL", "Spark/Flink", "Hadoop", "ETL"],
+    "nice_to_have": ["数据仓库", "Kafka", "Airflow", "数据治理", "云数据服务"],
+    "description": "负责大数据平台建设、数据管道开发、数据仓库设计与维护",
+    "typical_titles": ["数据工程师", "大数据开发", "ETL工程师", "Data Engineer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "SQL开发、简单ETL"},
+      "mid": {"years": "2-5年", "focus": "数据管道设计、性能优化"},
+      "senior": {"years": "5年+", "focus": "数据架构、数据治理"}
+    }
+  },
+  {
+    "job_id": "algorithm",
+    "title": "算法工程师",
+    "category": "AI/算法",
+    "core_skills": ["Python", "机器学习/深度学习", "TensorFlow/PyTorch", "数学/统计学", "特征工程"],
+    "nice_to_have": ["推荐系统", "NLP/CV", "模型部署", "大数据处理", "A/B测试"],
+    "description": "负责机器学习算法研发、模型训练与优化、推荐/搜索/广告等策略设计",
+    "typical_titles": ["算法工程师", "机器学习工程师", "AI工程师", "推荐算法"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "模型训练、特征工程"},
+      "mid": {"years": "2-5年", "focus": "算法选型、模型优化"},
+      "senior": {"years": "5年+", "focus": "算法架构、业务策略"}
+    }
+  },
+  {
+    "job_id": "sre",
+    "title": "运维/SRE工程师",
+    "category": "运维",
+    "core_skills": ["Linux", "Shell/Python", "监控系统", "容器化", "网络基础"],
+    "nice_to_have": ["Kubernetes", "CI/CD", "自动化运维", "云平台", "Terraform"],
+    "description": "负责线上服务的稳定性保障、监控告警、故障处理与容量规划",
+    "typical_titles": ["运维工程师", "SRE", "系统运维", "Site Reliability Engineer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "日常运维、监控响应"},
+      "mid": {"years": "2-5年", "focus": "自动化运维、故障处理"},
+      "senior": {"years": "5年+", "focus": "稳定性架构、容量规划"}
+    }
+  },
+  {
+    "job_id": "qa",
+    "title": "测试工程师",
+    "category": "质量保障",
+    "core_skills": ["测试方法", "自动化测试", "Python/Java", "测试用例设计", "缺陷管理"],
+    "nice_to_have": ["性能测试", "CI/CD", "安全测试", "测试平台开发", "Selenium/Appium"],
+    "description": "负责软件质量保障、测试方案设计、自动化测试框架搭建与执行",
+    "typical_titles": ["测试工程师", "QA工程师", "质量保障", "自动化测试"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "用例执行、缺陷提交"},
+      "mid": {"years": "2-5年", "focus": "测试方案设计、自动化"},
+      "senior": {"years": "5年+", "focus": "质量体系建设、测试平台"}
+    }
+  },
+  {
+    "job_id": "devops",
+    "title": "DevOps工程师",
+    "category": "DevOps",
+    "core_skills": ["CI/CD", "Docker", "Kubernetes", "Linux", "脚本语言"],
+    "nice_to_have": ["Jenkins/GitLab CI", "Terraform", "监控系统", "云平台(AWS/阿里云)", "GitOps"],
+    "description": "负责CI/CD流水线建设、容器化平台管理、开发效率工具链维护",
+    "typical_titles": ["DevOps", "DevOps工程师", "CI/CD工程师", "平台工程师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "CI/CD维护、基础运维"},
+      "mid": {"years": "2-5年", "focus": "流水线优化、容器化改造"},
+      "senior": {"years": "5年+", "focus": "DevOps架构、平台工程"}
+    }
+  },
+  {
+    "job_id": "architect",
+    "title": "架构师",
+    "category": "架构设计",
+    "core_skills": ["系统架构设计", "分布式系统", "技术选型", "多语言经验", "微服务"],
+    "nice_to_have": ["领域驱动设计", "性能调优", "技术管理经验", "跨团队协作", "技术布道"],
+    "description": "负责系统架构设计、技术方案评审、技术选型决策与架构演进规划",
+    "typical_titles": ["架构师", "系统架构师", "技术架构师", "Software Architect"],
+    "levels": {
+      "junior": {"years": "不适用", "focus": "通常需要5年+开发经验"},
+      "mid": {"years": "5-8年", "focus": "系统设计、技术方案"},
+      "senior": {"years": "8年+", "focus": "全局架构、技术战略"}
+    }
+  },
+  {
+    "job_id": "tech_lead",
+    "title": "技术经理/Tech Lead",
+    "category": "技术管理",
+    "core_skills": ["团队管理", "项目管理", "技术决策", "代码审查", "跨部门沟通"],
+    "nice_to_have": ["敏捷开发", "OKR/KPI管理", "招聘经验", "系统架构", "技术规划"],
+    "description": "负责技术团队管理、项目交付、技术方向把控与人员培养",
+    "typical_titles": ["技术经理", "Tech Lead", "技术负责人", "研发经理"],
+    "levels": {
+      "junior": {"years": "不适用", "focus": "通常需要5年+技术经验"},
+      "mid": {"years": "5-8年", "focus": "小团队管理、项目交付"},
+      "senior": {"years": "8年+", "focus": "多团队管理、技术战略"}
+    }
+  },
+  {
+    "job_id": "pm_tech",
+    "title": "产品经理（技术背景）",
+    "category": "产品管理",
+    "core_skills": ["产品设计", "需求分析", "数据分析", "技术理解力", "项目管理"],
+    "nice_to_have": ["SQL", "API理解", "用户体验", "行业知识", "敏捷/Scrum"],
+    "description": "负责产品需求分析、功能设计、项目管理，需要技术背景以更好与研发沟通",
+    "typical_titles": ["产品经理", "技术产品经理", "PM", "产品负责人"],
+    "levels": {
+      "junior": {"years": "0-3年", "focus": "需求分析、原型设计"},
+      "mid": {"years": "3-6年", "focus": "独立负责产品线"},
+      "senior": {"years": "6年+", "focus": "产品战略、团队管理"}
+    }
+  },
+  {
+    "job_id": "dba",
+    "title": "数据库工程师(DBA)",
+    "category": "数据基础设施",
+    "core_skills": ["MySQL/PostgreSQL", "SQL优化", "数据库架构", "备份恢复", "性能调优"],
+    "nice_to_have": ["Redis", "MongoDB", "数据迁移", "高可用方案", "云数据库"],
+    "description": "负责数据库架构设计、性能优化、数据安全与高可用方案实施",
+    "typical_titles": ["DBA", "数据库管理员", "数据库工程师", "Database Engineer"],
+    "levels": {
+      "junior": {"years": "0-3年", "focus": "日常运维、SQL调优"},
+      "mid": {"years": "3-6年", "focus": "架构设计、性能优化"},
+      "senior": {"years": "6年+", "focus": "数据架构、容灾方案"}
+    }
+  },
+  {
+    "job_id": "security",
+    "title": "安全工程师",
+    "category": "信息安全",
+    "core_skills": ["应用安全", "安全编码", "安全架构", "漏洞扫描", "安全合规"],
+    "nice_to_have": ["云安全", "DevSecOps", "安全工具开发", "SDL流程", "零信任架构"],
+    "description": "负责应用安全体系建设、安全编码规范、安全架构评审与安全合规落地",
+    "typical_titles": ["安全工程师", "应用安全工程师", "Security Engineer", "安全专家"],
+    "levels": {
+      "junior": {"years": "0-3年", "focus": "安全测试、漏洞扫描"},
+      "mid": {"years": "3-6年", "focus": "安全方案设计、SDL落地"},
+      "senior": {"years": "6年+", "focus": "安全架构、体系建设"}
+    }
+  },
+  {
+    "job_id": "ai_llm",
+    "title": "AI/大模型应用开发工程师",
+    "category": "AI/大模型",
+    "core_skills": ["Python", "LLM应用开发", "RAG架构", "Prompt Engineering", "API开发"],
+    "nice_to_have": ["LangChain/LlamaIndex", "向量数据库", "Agent开发", "微调(Fine-tuning)", "模型部署"],
+    "description": "基于大语言模型（LLM）进行应用层开发，包括RAG系统、AI Agent、智能对话等产品落地",
+    "typical_titles": ["大模型应用开发", "AI应用工程师", "LLM开发", "AI开发工程师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "Prompt调优、API集成"},
+      "mid": {"years": "2-5年", "focus": "RAG系统设计、Agent开发"},
+      "senior": {"years": "5年+", "focus": "AI产品架构、模型选型策略"}
+    }
+  },
+  {
+    "job_id": "ml_engineer",
+    "title": "机器学习工程师",
+    "category": "AI/算法",
+    "core_skills": ["Python", "机器学习", "深度学习框架", "数据工程", "模型训练与评估"],
+    "nice_to_have": ["MLOps", "特征工程", "A/B测试", "推荐系统", "模型压缩与加速"],
+    "description": "负责机器学习模型的工程化落地，包括数据管道、模型训练、部署上线与效果监控",
+    "typical_titles": ["机器学习工程师", "ML Engineer", "MLOps工程师", "AI平台工程师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "数据处理、模型训练"},
+      "mid": {"years": "2-5年", "focus": "模型优化、MLOps搭建"},
+      "senior": {"years": "5年+", "focus": "ML平台架构、模型治理"}
+    }
+  },
+  {
+    "job_id": "pm_project",
+    "title": "项目经理（技术方向）",
+    "category": "项目管理",
+    "core_skills": ["项目管理", "敏捷/Scrum", "风险管理", "跨部门沟通", "进度管控"],
+    "nice_to_have": ["PMP/PRINCE2", "技术背景", "JIRA/项目管理工具", "成本管理", "供应商管理"],
+    "description": "负责软件研发项目的全生命周期管理，包括范围、进度、质量、风险与干系人管理",
+    "typical_titles": ["项目经理", "PMO", "项目总监", "敏捷教练", "Scrum Master"],
+    "levels": {
+      "junior": {"years": "0-3年", "focus": "项目跟进、会议组织"},
+      "mid": {"years": "3-6年", "focus": "独立管理中型项目"},
+      "senior": {"years": "6年+", "focus": "项目群管理、PMO建设"}
+    }
+  },
+  {
+    "job_id": "embedded",
+    "title": "嵌入式开发工程师",
+    "category": "嵌入式",
+    "core_skills": ["C/C++", "RTOS", "ARM架构", "嵌入式Linux", "硬件接口协议"],
+    "nice_to_have": ["FreeRTOS", "驱动开发", "单片机(STM32等)", "物联网协议(MQTT/CoAP)", "PCB基础"],
+    "description": "负责嵌入式系统软件开发，包括驱动开发、系统移植、硬件接口编程与性能优化",
+    "typical_titles": ["嵌入式工程师", "固件工程师", "嵌入式开发", "Firmware Engineer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "外设驱动、基础功能开发"},
+      "mid": {"years": "2-5年", "focus": "系统移植、复杂驱动开发"},
+      "senior": {"years": "5年+", "focus": "系统架构、技术方案设计"}
+    }
+  },
+  {
+    "job_id": "av_dev",
+    "title": "音视频开发工程师",
+    "category": "音视频",
+    "core_skills": ["C/C++", "音视频编解码(H.264/H.265)", "FFmpeg", "WebRTC", "流媒体协议"],
+    "nice_to_have": ["OpenGL/Metal", "降噪/回声消除算法", "SIP/H.323", "直播技术", "硬件编解码"],
+    "description": "负责实时音视频系统开发，包括编解码优化、流媒体传输、音视频处理算法实现",
+    "typical_titles": ["音视频开发", "流媒体工程师", "视频开发工程师", "RTC开发"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "FFmpeg使用、基础编码"},
+      "mid": {"years": "2-5年", "focus": "编解码优化、协议实现"},
+      "senior": {"years": "5年+", "focus": "音视频架构、算法设计"}
+    }
+  },
+  {
+    "job_id": "game_dev",
+    "title": "游戏开发工程师",
+    "category": "游戏开发",
+    "core_skills": ["C++/C#", "Unity/Unreal", "游戏引擎", "3D数学/图形学", "物理引擎"],
+    "nice_to_have": ["Shader编程", "网络同步", "性能优化", "手游开发", "游戏AI"],
+    "description": "负责游戏客户端或服务端开发，包括游戏逻辑、渲染、物理系统与性能优化",
+    "typical_titles": ["游戏开发", "Unity开发", "Unreal开发", "Game Developer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "基础功能实现、UI开发"},
+      "mid": {"years": "2-5年", "focus": "核心系统开发、性能优化"},
+      "senior": {"years": "5年+", "focus": "引擎扩展、架构设计"}
+    }
+  },
+  {
+    "job_id": "blockchain",
+    "title": "区块链开发工程师",
+    "category": "区块链",
+    "core_skills": ["Solidity/Rust/Move", "智能合约", "区块链协议", "密码学基础", "分布式系统"],
+    "nice_to_have": ["EVM原理", "DeFi/NFT协议", "共识算法", "Web3.js/Ethers.js", "Layer2方案"],
+    "description": "负责区块链底层开发或智能合约开发，包括链上协议实现、合约审计与Web3应用构建",
+    "typical_titles": ["区块链开发", "智能合约开发", "Web3工程师", "Blockchain Developer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "智能合约编写、Web3前端"},
+      "mid": {"years": "2-5年", "focus": "协议设计、合约架构"},
+      "senior": {"years": "5年+", "focus": "公链开发、经济模型设计"}
+    }
+  },
+  {
+    "job_id": "infosec",
+    "title": "信息安全工程师",
+    "category": "信息安全",
+    "core_skills": ["渗透测试", "漏洞挖掘与利用", "安全审计", "应急响应", "安全工具开发"],
+    "nice_to_have": ["红蓝对抗", "代码审计", "CTF经验", "内网渗透", "APT分析"],
+    "description": "负责渗透测试、漏洞挖掘、安全审计与应急响应，从攻击视角发现和验证安全风险",
+    "typical_titles": ["信息安全工程师", "渗透测试工程师", "安全研究员", "红队工程师"],
+    "levels": {
+      "junior": {"years": "0-3年", "focus": "渗透测试执行、工具使用"},
+      "mid": {"years": "3-6年", "focus": "独立漏洞挖掘、代码审计"},
+      "senior": {"years": "6年+", "focus": "红蓝对抗规划、APT研究"}
+    }
+  },
+  {
+    "job_id": "bigdata_dev",
+    "title": "大数据开发工程师",
+    "category": "大数据",
+    "core_skills": ["Hadoop/Spark", "Hive/HBase", "Java/Scala", "数据仓库建模", "ETL开发"],
+    "nice_to_have": ["Flink流计算", "Kafka", "数据治理", "OLAP引擎(ClickHouse/Doris)", "调度系统"],
+    "description": "负责大数据平台开发与维护，包括离线/实时数据仓库建设、数据处理引擎开发",
+    "typical_titles": ["大数据开发", "大数据工程师", "数据平台开发", "Big Data Developer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "SQL开发、简单ETL"},
+      "mid": {"years": "2-5年", "focus": "数仓建模、流计算开发"},
+      "senior": {"years": "5年+", "focus": "数据架构、平台建设"}
+    }
+  },
+  {
+    "job_id": "cloud_native",
+    "title": "云原生工程师",
+    "category": "云原生",
+    "core_skills": ["Kubernetes", "Docker/容器技术", "服务网格(Istio等)", "CI/CD工具链", "云平台(阿里云/AWS等)"],
+    "nice_to_have": ["Helm/Kustomize", "Prometheus/Grafana", "GitOps(ArgoCD等)", "Serverless", "多集群管理"],
+    "description": "负责云原生基础设施建设和平台工程，包括K8s集群管理、服务治理、弹性伸缩与可观测性",
+    "typical_titles": ["云原生工程师", "容器平台工程师", "K8s工程师", "Cloud Native Engineer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "Docker使用、K8s基础操作"},
+      "mid": {"years": "2-5年", "focus": "集群运维、服务网格落地"},
+      "senior": {"years": "5年+", "focus": "云原生架构、多集群治理"}
+    }
+  },
+  {
+    "job_id": "network_eng",
+    "title": "网络工程师",
+    "category": "基础设施",
+    "core_skills": ["TCP/IP协议栈", "路由交换", "防火墙/VPN", "网络规划", "抓包分析"],
+    "nice_to_have": ["SDN技术", "CCNP/CCIE认证", "负载均衡", "网络监控", "云网络(VPC等)"],
+    "description": "负责企业网络架构规划、网络设备配置管理、网络故障诊断与安全策略实施",
+    "typical_titles": ["网络工程师", "网络管理员", "Network Engineer", "网络架构师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "基础配置、故障排查"},
+      "mid": {"years": "2-5年", "focus": "网络规划、安全策略"},
+      "senior": {"years": "5年+", "focus": "网络架构设计、SDN落地"}
+    }
+  },
+  {
+    "job_id": "delivery_eng",
+    "title": "实施/交付工程师",
+    "category": "交付",
+    "core_skills": ["Linux系统管理", "Shell/脚本", "软件部署", "故障排查", "客户沟通"],
+    "nice_to_have": ["Docker", "数据库运维", "技术方案编写", "项目管理", "API调试"],
+    "description": "负责软件产品的现场或远程部署交付、客户培训、技术方案落地与售后技术支持",
+    "typical_titles": ["实施工程师", "交付工程师", "技术支持工程师", "部署运维"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "标准部署、问题收集"},
+      "mid": {"years": "2-5年", "focus": "复杂环境部署、客户培训"},
+      "senior": {"years": "5年+", "focus": "交付方案设计、团队管理"}
+    }
+  },
+  {
+    "job_id": "accounting",
+    "title": "会计/财务会计",
+    "category": "财务/会计",
+    "core_skills": ["会计核算", "凭证编制", "账簿登记", "财务报表编制", "纳税申报", "Excel"],
+    "nice_to_have": ["ERP系统（用友/金蝶/SAP）", "成本核算", "预算管理", "SQL"],
+    "description": "负责企业日常账务处理、报表编制、税务申报等财务基础工作",
+    "typical_titles": ["会计", "财务会计", "总账会计", "会计专员"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "凭证编制、基础核算"},
+      "mid": {"years": "2-5年", "focus": "独立账务处理、报表编制"},
+      "senior": {"years": "5年+", "focus": "全盘账务、财务分析、团队指导"}
+    }
+  },
+  {
+    "job_id": "auditor",
+    "title": "审计专员/审计师",
+    "category": "财务/会计",
+    "core_skills": ["审计实务", "审计底稿编制", "实质性程序", "风险评估", "企业会计准则", "审计准则"],
+    "nice_to_have": ["CPA", "数据分析工具（IDEA/ACL）", "SQL", "Python"],
+    "description": "执行审计程序，编制审计底稿，出具审计报告",
+    "typical_titles": ["审计员", "审计师", "审计专员", "高级审计员"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "底稿编制、资产类科目审计"},
+      "mid": {"years": "2-5年", "focus": "独立带队、复杂科目审计"},
+      "senior": {"years": "5年+", "focus": "审计项目管理、报告出具、质量控制"}
+    }
+  },
+  {
+    "job_id": "tax_accounting",
+    "title": "税务专员/税务会计",
+    "category": "财务/会计",
+    "core_skills": ["增值税申报", "企业所得税申报", "个人所得税申报", "税法", "税务筹划"],
+    "nice_to_have": ["税务师资格", "ERP系统", "Excel高级功能"],
+    "description": "负责企业税务申报、税务筹划和税务合规管理",
+    "typical_titles": ["税务专员", "税务会计", "税务师", "税务主管"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "日常申报、发票管理"},
+      "mid": {"years": "2-5年", "focus": "税务筹划、税务稽查应对"},
+      "senior": {"years": "5年+", "focus": "税务体系搭建、税收筹划方案"}
+    }
+  },
+  {
+    "job_id": "financial_analyst",
+    "title": "财务分析师",
+    "category": "财务/会计",
+    "core_skills": ["财务分析", "财务建模", "预算编制", "经营分析", "Excel（数据透视表/函数）", "财务报表分析"],
+    "nice_to_have": ["SQL", "Python/R", "Tableau/Power BI", "FP&A"],
+    "description": "通过财务数据分析为管理层提供经营决策支持",
+    "typical_titles": ["财务分析师", "Financial Analyst", "财务BP", "经营分析师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "数据整理、基础报表分析"},
+      "mid": {"years": "2-5年", "focus": "财务建模、预算编制"},
+      "senior": {"years": "5年+", "focus": "业务伙伴、战略财务分析"}
+    }
+  },
+  {
+    "job_id": "cost_accounting",
+    "title": "成本会计",
+    "category": "财务/会计",
+    "core_skills": ["成本核算", "标准成本法", "作业成本法", "成本控制", "BOM管理"],
+    "nice_to_have": ["ERP系统", "制造业经验", "Excel高级功能"],
+    "description": "负责企业成本核算、成本分析和成本控制",
+    "typical_titles": ["成本会计", "成本核算专员", "成本主管"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "基础成本核算、单据审核"},
+      "mid": {"years": "2-5年", "focus": "成本分析、成本控制方案"},
+      "senior": {"years": "5年+", "focus": "成本体系搭建、降本增效"}
+    }
+  },
+  {
+    "job_id": "cashier",
+    "title": "出纳",
+    "category": "财务/会计",
+    "core_skills": ["现金管理", "银行对账", "票据管理", "费用报销", "资金日报"],
+    "nice_to_have": ["ERP系统", "Excel", "银行网银操作"],
+    "description": "负责企业资金收付、银行账户管理和票据管理",
+    "typical_titles": ["出纳", "出纳专员", "资金专员"],
+    "levels": {
+      "junior": {"years": "0-1年", "focus": "现金收付、银行回单整理"},
+      "mid": {"years": "1-3年", "focus": "独立出纳全流程、资金日报"},
+      "senior": {"years": "3年+", "focus": "资金管理、银企关系维护"}
+    }
+  },
+  {
+    "job_id": "user_ops",
+    "title": "用户运营/运营经理",
+    "category": "运营管理",
+    "core_skills": ["用户增长", "用户分层", "活动策划", "数据分析", "A/B测试", "私域流量"],
+    "nice_to_have": ["SQL", "Excel", "Tableau", "Python", "社群运营工具"],
+    "description": "负责用户生命周期管理、活跃度提升和转化率优化",
+    "typical_titles": ["用户运营", "运营经理", "增长运营", "用户增长经理"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "日常执行、数据整理"},
+      "mid": {"years": "2-5年", "focus": "策略制定、活动策划"},
+      "senior": {"years": "5年+", "focus": "增长体系搭建、团队管理"}
+    }
+  },
+  {
+    "job_id": "brand_marketing",
+    "title": "品牌营销经理",
+    "category": "品牌/营销",
+    "core_skills": ["品牌策略", "营销策划", "市场调研", "竞品分析", "媒介投放", "预算管理"],
+    "nice_to_have": ["数字营销", "SEM/SEO", "社交媒体运营", "CRM系统"],
+    "description": "负责品牌定位、营销策略制定和品牌传播",
+    "typical_titles": ["品牌经理", "营销经理", "品牌营销", "市场经理"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "市场调研、活动执行"},
+      "mid": {"years": "2-5年", "focus": "品牌策略、媒介投放"},
+      "senior": {"years": "5年+", "focus": "品牌体系搭建、预算管理"}
+    }
+  },
+  {
+    "job_id": "marketing_specialist",
+    "title": "市场营销专员",
+    "category": "品牌/营销",
+    "core_skills": ["市场推广", "活动执行", "渠道管理", "市场调研", "商务谈判"],
+    "nice_to_have": ["数字营销工具", "Excel", "CRM系统"],
+    "description": "负责市场推广活动的策划和执行，拓展销售渠道",
+    "typical_titles": ["市场专员", "营销专员", "市场推广", "Marketing Specialist"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "活动执行、渠道对接"},
+      "mid": {"years": "2-5年", "focus": "独立策划、渠道拓展"},
+      "senior": {"years": "5年+", "focus": "营销策略、团队管理"}
+    }
+  },
+  {
+    "job_id": "newmedia_ops",
+    "title": "新媒体运营",
+    "category": "新媒体/内容",
+    "core_skills": ["内容策划", "公众号运营", "短视频运营", "社群运营", "文案撰写", "用户互动"],
+    "nice_to_have": ["Photoshop/Canva", "数据分析", "SEO基础", "投放经验"],
+    "description": "负责企业新媒体平台的内容策划、发布和粉丝运营",
+    "typical_titles": ["新媒体运营", "新媒体编辑", "内容运营", "社媒运营"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "内容发布、日常维护"},
+      "mid": {"years": "2-5年", "focus": "内容策划、粉丝增长"},
+      "senior": {"years": "5年+", "focus": "新媒体矩阵搭建、策略制定"}
+    }
+  },
+  {
+    "job_id": "business_analyst",
+    "title": "商业分析师",
+    "category": "商业分析",
+    "core_skills": ["数据分析", "业务建模", "SQL", "Excel", "商业洞察", "汇报呈现"],
+    "nice_to_have": ["Python/R", "Tableau/Power BI", "A/B测试", "机器学习基础"],
+    "description": "通过数据分析发现业务问题和机会，推动业务决策",
+    "typical_titles": ["商业分析师", "BA", "业务分析师", "数据分析师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "数据提取、报表制作"},
+      "mid": {"years": "2-5年", "focus": "专题分析、业务洞察"},
+      "senior": {"years": "5年+", "focus": "数据策略、商业决策支持"}
+    }
+  },
+  {
+    "job_id": "supply_chain",
+    "title": "供应链管理",
+    "category": "供应链/物流",
+    "core_skills": ["采购管理", "库存管理", "供应商管理", "物流管理", "需求预测"],
+    "nice_to_have": ["ERP系统（SAP/Oracle）", "Excel", "数据分析"],
+    "description": "负责供应链计划、采购执行和库存优化",
+    "typical_titles": ["供应链专员", "供应链经理", "采购专员", "物流经理"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "采购执行、库存跟踪"},
+      "mid": {"years": "2-5年", "focus": "供应商管理、流程优化"},
+      "senior": {"years": "5年+", "focus": "供应链策略、体系建设"}
+    }
+  },
+  {
+    "job_id": "pm_general",
+    "title": "项目经理（非技术方向）",
+    "category": "项目管理",
+    "core_skills": ["项目管理", "进度控制", "风险管理", "跨部门协调", "PMP", "甘特图"],
+    "nice_to_have": ["JIRA", "飞书/钉钉", "Excel", "敏捷管理"],
+    "description": "负责项目的全生命周期管理，确保按时按质交付",
+    "typical_titles": ["项目经理", "项目专员", "项目主管", "PMO专员"],
+    "levels": {
+      "junior": {"years": "0-3年", "focus": "项目跟进、文档管理"},
+      "mid": {"years": "3-6年", "focus": "独立管理中型项目"},
+      "senior": {"years": "6年+", "focus": "项目群管理、跨部门协调"}
+    }
+  },
+  {
+    "job_id": "mechanical_design",
+    "title": "机械设计工程师",
+    "category": "机械/制造",
+    "core_skills": ["CATIA", "SolidWorks", "AutoCAD", "机械设计", "工程制图", "公差分析"],
+    "nice_to_have": ["ANSYS", "MATLAB", "有限元分析", "GD&T", "材料学"],
+    "description": "负责机械产品的结构设计、建模和工程图输出",
+    "typical_titles": ["机械工程师", "结构工程师", "机械设计", "产品结构工程师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "3D建模、2D出图"},
+      "mid": {"years": "2-5年", "focus": "独立设计、结构优化"},
+      "senior": {"years": "5年+", "focus": "产品架构设计、技术方案"}
+    }
+  },
+  {
+    "job_id": "automotive_parts",
+    "title": "汽车零部件工程师",
+    "category": "机械/制造",
+    "core_skills": ["汽车零部件设计", "CATIA", "DFMEA", "DVP&R", "产品开发流程", "供应商管理"],
+    "nice_to_have": ["ANSYS", "模流分析", "注塑/冲压工艺", "IATF 16949"],
+    "description": "负责汽车零部件的设计开发和量产导入",
+    "typical_titles": ["汽车工程师", "零部件工程师", "产品工程师", "设计工程师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "图纸绘制、样件跟踪"},
+      "mid": {"years": "2-5年", "focus": "产品设计、DFMEA编制"},
+      "senior": {"years": "5年+", "focus": "平台化设计、技术评审"}
+    }
+  },
+  {
+    "job_id": "cae_simulation",
+    "title": "CAE仿真工程师",
+    "category": "机械/制造",
+    "core_skills": ["ANSYS", "Abaqus", "有限元分析", "结构仿真", "热分析", "模态分析"],
+    "nice_to_have": ["MATLAB", "Python", "HyperMesh", "优化算法"],
+    "description": "使用仿真软件对产品结构和性能进行虚拟验证",
+    "typical_titles": ["CAE工程师", "仿真工程师", "有限元分析工程师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "网格划分、基础分析"},
+      "mid": {"years": "2-5年", "focus": "复杂仿真、结果解读"},
+      "senior": {"years": "5年+", "focus": "仿真体系建设、CAE流程"}
+    }
+  },
+  {
+    "job_id": "process_engineer",
+    "title": "工艺工程师",
+    "category": "机械/制造",
+    "core_skills": ["工艺规划", "注塑工艺", "冲压工艺", "焊接工艺", "CNC编程", "工艺优化"],
+    "nice_to_have": ["CAD/CAM", "精益生产", "六西格玛", "SPC"],
+    "description": "负责生产工艺的设计、优化和质量控制",
+    "typical_titles": ["工艺工程师", "工艺员", "制造工程师", "ME"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "工艺文件编制、现场支持"},
+      "mid": {"years": "2-5年", "focus": "工艺优化、良率提升"},
+      "senior": {"years": "5年+", "focus": "工艺体系搭建、新技术导入"}
+    }
+  },
+  {
+    "job_id": "quality_engineer",
+    "title": "质量工程师",
+    "category": "机械/制造",
+    "core_skills": ["质量管理", "DFMEA", "PFMEA", "SPC", "8D报告", "PPAP", "来料检验"],
+    "nice_to_have": ["六西格玛", "ISO 9001", "IATF 16949", "Minitab"],
+    "description": "负责产品质量管控、质量问题分析和持续改进",
+    "typical_titles": ["质量工程师", "QE", "品质工程师", "质量主管"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "来料检验、数据统计"},
+      "mid": {"years": "2-5年", "focus": "质量问题分析、体系维护"},
+      "senior": {"years": "5年+", "focus": "质量体系建设、六西格玛改进"}
+    }
+  },
+  {
+    "job_id": "electrical_engineer",
+    "title": "电气/电子工程师",
+    "category": "机械/制造",
+    "core_skills": ["电路设计", "PCB设计", "Altium Designer", "嵌入式C", "模拟/数字电路"],
+    "nice_to_have": ["EMC/EMI", "FPGA", "PLC", "示波器", "信号完整性分析"],
+    "description": "负责电子电路设计、PCB布局和硬件调试",
+    "typical_titles": ["电子工程师", "硬件工程师", "电气工程师", "PCB工程师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "原理图绘制、PCB layout"},
+      "mid": {"years": "2-5年", "focus": "电路设计、硬件调试"},
+      "senior": {"years": "5年+", "focus": "硬件架构、技术方案"}
+    }
+  },
+  {
+    "job_id": "hr_specialist",
+    "title": "HR专员/人力资源专员",
+    "category": "人力资源",
+    "core_skills": ["招聘管理", "员工关系", "薪酬核算", "社保公积金", "劳动法", "HR系统"],
+    "nice_to_have": ["Excel", "数据分析", "培训组织", "绩效管理"],
+    "description": "负责企业人力资源管理的日常事务",
+    "typical_titles": ["HR专员", "人事专员", "人力资源专员", "HR"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "入离职办理、社保公积金"},
+      "mid": {"years": "2-5年", "focus": "全模块操作、制度建设"},
+      "senior": {"years": "5年+", "focus": "HR体系搭建、团队管理"}
+    }
+  },
+  {
+    "job_id": "recruiting_manager",
+    "title": "招聘经理/招聘专家",
+    "category": "人力资源",
+    "core_skills": ["招聘策略", "简历筛选", "面试技巧", "人才画像", "渠道管理", "雇主品牌"],
+    "nice_to_have": ["HR SaaS系统", "数据分析", "行业人脉", "校招经验"],
+    "description": "负责企业人才招聘的全流程管理和渠道拓展",
+    "typical_titles": ["招聘经理", "招聘专员", "猎头顾问", "招聘专家"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "简历筛选、面试安排"},
+      "mid": {"years": "2-5年", "focus": "独立招聘、渠道管理"},
+      "senior": {"years": "5年+", "focus": "招聘策略、团队管理"}
+    }
+  },
+  {
+    "job_id": "training_manager",
+    "title": "培训经理/培训专员",
+    "category": "人力资源",
+    "core_skills": ["培训需求分析", "课程设计", "培训组织", "效果评估", "内训师管理"],
+    "nice_to_have": ["E-learning平台", "直播工具", "PPT设计", "演讲能力"],
+    "description": "负责企业培训体系搭建和培训项目执行",
+    "typical_titles": ["培训经理", "培训专员", "培训主管", "培训师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "培训组织、参训管理"},
+      "mid": {"years": "2-5年", "focus": "课程开发、内训师培养"},
+      "senior": {"years": "5年+", "focus": "培训体系搭建、人才发展"}
+    }
+  },
+  {
+    "job_id": "admin_officer",
+    "title": "行政主管/行政专员",
+    "category": "行政后勤",
+    "core_skills": ["办公管理", "会议组织", "固定资产", "采购管理", "公文写作", "接待管理"],
+    "nice_to_have": ["Excel", "OA系统", "活动策划"],
+    "description": "负责企业日常行政事务管理和后勤保障",
+    "typical_titles": ["行政专员", "行政主管", "行政经理", "办公室主任"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "日常事务执行"},
+      "mid": {"years": "2-5年", "focus": "制度建设、统筹协调"},
+      "senior": {"years": "5年+", "focus": "行政管理体系、团队管理"}
+    }
+  },
+  {
+    "job_id": "ui_designer",
+    "title": "UI设计师",
+    "category": "设计",
+    "core_skills": ["Figma", "Sketch", "Adobe XD", "界面设计", "设计规范", "交互设计"],
+    "nice_to_have": ["HTML/CSS基础", "动效设计（After Effects）", "设计系统", "用户研究"],
+    "description": "负责产品界面视觉设计和设计规范制定",
+    "typical_titles": ["UI设计师", "界面设计师", "GUI设计师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "界面切图、基础控件设计"},
+      "mid": {"years": "2-5年", "focus": "设计规范、交互方案"},
+      "senior": {"years": "5年+", "focus": "设计系统、产品视觉策略"}
+    }
+  },
+  {
+    "job_id": "ux_designer",
+    "title": "UX设计师/用户体验设计师",
+    "category": "设计",
+    "core_skills": ["用户研究", "可用性测试", "信息架构", "交互设计", "原型设计", "用户旅程图"],
+    "nice_to_have": ["Figma", "数据分析", "A/B测试", "前端基础"],
+    "description": "通过用户研究和设计方法提升产品的用户体验",
+    "typical_titles": ["UX设计师", "用户体验设计师", "交互设计师", "UX Researcher"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "用户调研执行、低保真原型"},
+      "mid": {"years": "2-5年", "focus": "用研方案、交互框架"},
+      "senior": {"years": "5年+", "focus": "体验策略、设计驱动"}
+    }
+  },
+  {
+    "job_id": "graphic_designer",
+    "title": "平面设计师",
+    "category": "设计",
+    "core_skills": ["Photoshop", "Illustrator", "InDesign", "品牌视觉", "海报设计", "排版设计"],
+    "nice_to_have": ["C4D", "After Effects", "摄影基础", "印刷工艺"],
+    "description": "负责品牌视觉设计、营销物料设计和印刷品制作",
+    "typical_titles": ["平面设计师", "视觉设计师", "品牌设计师", "Graphic Designer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "修图、排版、物料制作"},
+      "mid": {"years": "2-5年", "focus": "品牌视觉、创意设计"},
+      "senior": {"years": "5年+", "focus": "视觉体系、创意指导"}
+    }
+  },
+  {
+    "job_id": "industrial_designer",
+    "title": "工业设计师",
+    "category": "设计",
+    "core_skills": ["Rhino", "KeyShot", "Alias", "产品造型设计", "CMF设计", "手绘"],
+    "nice_to_have": ["3D打印", "模型制作", "用户研究", "材料工艺"],
+    "description": "负责产品的外观造型设计和用户体验设计",
+    "typical_titles": ["工业设计师", "ID设计师", "产品设计师", "Industrial Designer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "模型制作、效果图渲染"},
+      "mid": {"years": "2-5年", "focus": "独立造型设计、CMF开发"},
+      "senior": {"years": "5年+", "focus": "产品设计策略、设计语言"}
+    }
+  },
+  {
+    "job_id": "sales_manager",
+    "title": "销售经理/销售代表",
+    "category": "销售/商务",
+    "core_skills": ["客户开发", "商务谈判", "合同管理", "CRM系统", "销售策略", "回款管理"],
+    "nice_to_have": ["行业知识", "Excel", "PPT", "演讲能力"],
+    "description": "负责客户开发、维护和销售目标达成",
+    "typical_titles": ["销售经理", "销售代表", "销售专员", "客户经理"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "客户开发、电话销售"},
+      "mid": {"years": "2-5年", "focus": "大客户跟进、独立谈判"},
+      "senior": {"years": "5年+", "focus": "销售策略、团队管理"}
+    }
+  },
+  {
+    "job_id": "key_account_mgr",
+    "title": "大客户经理",
+    "category": "销售/商务",
+    "core_skills": ["大客户管理", "解决方案销售", "商务谈判", "关系维护", "行业洞察"],
+    "nice_to_have": ["CRM系统", "数据分析", "项目管理"],
+    "description": "负责重点客户的深度合作和长期关系维护",
+    "typical_titles": ["大客户经理", "KA经理", "客户总监", "Key Account Manager"],
+    "levels": {
+      "junior": {"years": "0-3年", "focus": "客户维系、需求跟进"},
+      "mid": {"years": "3-6年", "focus": "独立负责大客户、解决方案"},
+      "senior": {"years": "6年+", "focus": "客户战略、业务拓展"}
+    }
+  },
+  {
+    "job_id": "bd_manager",
+    "title": "商务拓展(BD)",
+    "category": "销售/商务",
+    "core_skills": ["市场拓展", "合作伙伴管理", "商务谈判", "渠道合作", "行业分析"],
+    "nice_to_have": ["数据分析", "项目管理", "PPT", "演讲能力"],
+    "description": "负责新市场和新业务的拓展，建立战略合作关系",
+    "typical_titles": ["BD经理", "商务拓展", "业务发展经理", "BD"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "渠道拓展、合作对接"},
+      "mid": {"years": "2-5年", "focus": "独立BD、合作方案"},
+      "senior": {"years": "5年+", "focus": "业务战略、生态建设"}
+    }
+  },
+  {
+    "job_id": "teacher",
+    "title": "教师/讲师",
+    "category": "教育/培训",
+    "core_skills": ["教学设计", "课堂管理", "教案编写", "学生评估", "学科专业知识"],
+    "nice_to_have": ["多媒体教学", "在线教育工具", "教研能力"],
+    "description": "负责学科教学和学生培养",
+    "typical_titles": ["教师", "老师", "讲师", "学科老师"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "授课执行、班级管理"},
+      "mid": {"years": "2-5年", "focus": "教研、教学改进"},
+      "senior": {"years": "5年+", "focus": "教学体系、学科带头人"}
+    }
+  },
+  {
+    "job_id": "instructional_designer",
+    "title": "课程设计师/教学设计师",
+    "category": "教育/培训",
+    "core_skills": ["教学设计", "课程开发", "学习目标设计", "教学评估", "ADDIE模型"],
+    "nice_to_have": ["多媒体制作", "E-learning平台", "数据分析"],
+    "description": "负责课程体系设计和教学内容开发",
+    "typical_titles": ["课程设计师", "教学设计师", "课程开发", "Instructional Designer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "课程内容开发、素材制作"},
+      "mid": {"years": "2-5年", "focus": "课程体系设计、评估方案"},
+      "senior": {"years": "5年+", "focus": "学习路径设计、教育产品规划"}
+    }
+  },
+  {
+    "job_id": "legal_counsel",
+    "title": "法务专员/法务经理",
+    "category": "法律/合规",
+    "core_skills": ["合同审核", "法律风险评估", "劳动法", "公司法", "知识产权", "诉讼管理"],
+    "nice_to_have": ["法律检索工具", "行业法规知识", "谈判能力"],
+    "description": "负责企业法律事务管理和法律风险防控",
+    "typical_titles": ["法务专员", "法务经理", "法务主管", "法律顾问"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "合同审核、法律检索"},
+      "mid": {"years": "2-5年", "focus": "独立处理案件、制度完善"},
+      "senior": {"years": "5年+", "focus": "法务体系、重大案件管理"}
+    }
+  },
+  {
+    "job_id": "compliance_officer",
+    "title": "合规专员",
+    "category": "法律/合规",
+    "core_skills": ["合规管理", "法规解读", "内控制度", "风险评估", "合规审查"],
+    "nice_to_have": ["行业监管知识", "数据分析", "审计基础"],
+    "description": "负责企业合规体系建设和合规风险监控",
+    "typical_titles": ["合规专员", "合规经理", "合规主管", "Compliance Officer"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "合规检查执行、文件整理"},
+      "mid": {"years": "2-5年", "focus": "合规评估、制度完善"},
+      "senior": {"years": "5年+", "focus": "合规体系、监管对接"}
+    }
+  },
+  {
+    "job_id": "pharma_rep",
+    "title": "医药代表",
+    "category": "医疗/医药",
+    "core_skills": ["医学知识", "产品知识", "学术推广", "客户管理", "市场分析"],
+    "nice_to_have": ["CRM系统", "PPT", "演讲能力"],
+    "description": "负责医药产品的学术推广和客户关系维护",
+    "typical_titles": ["医药代表", "医药销售", "医学代表", "学术推广专员"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "医院拜访、产品推广"},
+      "mid": {"years": "2-5年", "focus": "区域管理、学术会议"},
+      "senior": {"years": "5年+", "focus": "大客户管理、策略制定"}
+    }
+  },
+  {
+    "job_id": "clinical_researcher",
+    "title": "临床研究员/CRA",
+    "category": "医疗/医药",
+    "core_skills": ["临床试验", "GCP规范", "数据管理", "监查访视", "医学写作"],
+    "nice_to_have": ["统计学基础", "SAS/R", "医学背景"],
+    "description": "负责临床试验项目的执行和质量监控",
+    "typical_titles": ["CRA", "临床监查员", "临床研究专员", "CRC"],
+    "levels": {
+      "junior": {"years": "0-2年", "focus": "中心筛选、基础监查"},
+      "mid": {"years": "2-5年", "focus": "独立监查、项目管理"},
+      "senior": {"years": "5年+", "focus": "项目运营、团队指导"}
+    }
+  }
+]

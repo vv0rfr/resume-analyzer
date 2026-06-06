@@ -1,0 +1,36 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# 环境变量
+.env
+
+# Node.js
+node_modules/
+.vite/
+
+# 构建产物
+frontend/dist/
+
+# 日志
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 数据库
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
