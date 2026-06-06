@@ -245,6 +245,80 @@ def build_custom_prompt(parsed: dict) -> str:
 - 如果候选人完全没有该岗位相关背景，不要硬凑"""
 
 
+# ─── 去重工具 ────────────────────────────────────────────
+
+
+def _same_direction(title1: str, title2: str) -> bool:
+    """判断两个岗位名称是否属于同一方向。
+
+    规则：
+    1. 完全相同 → 同方向
+    2. 共享技术栈关键词（Go/Java/Python 等）→ 同方向
+    3. 双方都有技术栈但不共享 → 不同方向（如 Go后端 vs Java后端）
+    4. 至少一方无技术栈 → 比对归一化中文
+    """
+    t1, t2 = title1.lower().strip(), title2.lower().strip()
+    if t1 == t2:
+        return True
+
+    tech1 = set(re.findall(r'[a-z+#]+', t1))
+    tech2 = set(re.findall(r'[a-z+#]+', t2))
+
+    # 共享技术栈 → 同方向
+    if tech1 and tech2 and (tech1 & tech2):
+        return True
+
+    # 双方都有技术栈但不重叠 → 不同方向（Go ≠ Java）
+    if tech1 and tech2:
+        return False
+
+    # 至少一方无技术栈 → 比对归一化中文部分
+    def _norm_cn(t: str) -> str:
+        t = re.sub(r'^(高级|资深|初级|助理|见习)\s*', '', t)
+        t = re.sub(r'[a-z+#\d\s]+', '', t)  # 去掉英文/数字/空格
+        for w in ['开发工程师', '工程师', '技术专家', '经理',
+                   '设计师', '专员', '顾问', '代表', '分析师']:
+            t = t.replace(w, '')
+        return t.strip()
+
+    n1, n2 = _norm_cn(t1), _norm_cn(t2)
+    return bool(n1 and n2 and n1 == n2)
+
+
+def _deduplicate_matches(matches: list[dict]) -> list[dict]:
+    """同一方向只保留最优项：KB 优先，同类型取分数高者。"""
+    if len(matches) <= 1:
+        return matches
+
+    # KB 排前（is_custom=False=0 < True=1），同类型分数高者排前
+    matches = sorted(
+        matches,
+        key=lambda x: (bool(x.get("is_custom")), -x.get("score", 0)),
+    )
+
+    deduped: list[dict] = []
+    for m in matches:
+        is_dup = False
+        for existing in deduped:
+            if _same_direction(m.get("title", ""), existing.get("title", "")):
+                if m.get("is_custom") and not existing.get("is_custom"):
+                    logger.info(
+                        f"去重: AI推荐'{m['title']}'({m['score']}分) 与 "
+                        f"知识库'{existing['title']}'({existing['score']}分)同方向, 删除AI推荐"
+                    )
+                else:
+                    logger.info(
+                        f"去重: '{m['title']}'({m['score']}分) 与 "
+                        f"'{existing['title']}'({existing['score']}分)同方向, 保留分高者"
+                    )
+                is_dup = True
+                break
+        if not is_dup:
+            deduped.append(m)
+
+    return deduped
+
+
 class JobMatcher:
     """岗位匹配器"""
 
@@ -264,8 +338,8 @@ class JobMatcher:
         # ── 第二步：自主推荐 ─────────────────────────
         custom_matches = self._autonomous_recommend(parsed_resume)
 
-        # ── 合并 ──────────────────────────────────
-        all_matches = kb_matches + custom_matches
+        # ── 合并 + 去重 ──────────────────────────────
+        all_matches = _deduplicate_matches(kb_matches + custom_matches)
         all_matches.sort(key=lambda x: x.get("score", 0), reverse=True)
         all_matches = all_matches[:8]
 
@@ -275,7 +349,8 @@ class JobMatcher:
                 print(f"[DEBUG] 合并结果中包含 AI推荐: {m['title']} ({m['score']}分) is_custom={m.get('is_custom')}")
 
         logger.info(
-            f"岗位匹配完成: {len(kb_matches)}个知识库 + {len(custom_matches)}个自主推荐 = {len(all_matches)}个"
+            f"岗位匹配完成: {len(kb_matches)}个知识库 + {len(custom_matches)}个自主推荐 "
+            f"→ 去重后 {len(all_matches)}个"
         )
         return all_matches
 
