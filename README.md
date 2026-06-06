@@ -60,6 +60,8 @@ AI 根据简历内容自动匹配岗位，0-100 打分，标注匹配/缺失技�
 | 数据库 | SQLite | — |
 | 文件解析 | pdfplumber + python-docx | pdfplumber 0.11 / python-docx 1.2 |
 
+前端使用 React 19 + TypeScript 构建组件化 UI，后端使用 FastAPI 提供 RESTful API，通过 DeepSeek API 实现 AI 分析能力，SQLite 存储历史记录。整体前后端分离，类型安全对齐。
+
 ## 架构设计
 
 ```
