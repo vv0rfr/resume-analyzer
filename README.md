@@ -1,8 +1,18 @@
 # 简历智能分析工具 (Resume Analyzer)
 
-AI 驱动的简历智能分析工具，支持自动解析简历结构、28+ 岗位方向精准匹配打分、深度分析与优化建议，覆盖全行业。
+AI 驱动的简历智能分析工具，支持自动解析简历结构、64+ 岗位知识库精准匹配打分、AI 自主推荐覆盖全行业、深度分析与优化建议。
 
 ![项目截图](./screenshots/demo.png)
+
+## 项目背景
+
+传统简历筛选存在三个痛点：
+
+1. **HR 筛选效率低**：每天面对几十份简历，人工判断匹配度耗时且主观，优质候选人容易被遗漏
+2. **求职者盲目投递**：不清楚自己的简历适合什么岗位，缺乏针对性优化，投递效率低下
+3. **行业覆盖不足**：现有简历工具大多只覆盖互联网技术岗，财务/制造/运营/设计/教育/医疗等非技术专业求职者无法使用
+
+本项目通过 AI 驱动的智能分析，实现从「简历解析 → 岗位匹配 → 深度分析 → 优化建议」的全链路覆盖，支持 64+ 岗位知识库匹配 + AI 自主推荐，覆盖全行业。
 
 ## 核心功能
 
@@ -19,11 +29,11 @@ AI 驱动的简历智能分析工具，支持自动解析简历结构、28+ 岗�
 
 | 层级 | 技术 | 版本 |
 |------|------|------|
-| 前端 | React + TypeScript + Vite + CSS | React 19 / Vite 8 / TypeScript 6 |
-| 后端 | Python + FastAPI + SQLAlchemy | Python 3.14 / FastAPI 0.x |
-| AI 引擎 | DeepSeek API（OpenAI 兼容 SDK） | deepseek-chat |
+| 前端 | React + TypeScript + Vite + CSS | React 19.2 / Vite 8.0 / TypeScript 6.0 |
+| 后端 | Python + FastAPI + SQLAlchemy | Python 3.14 / FastAPI 0.136 / SQLAlchemy 2.0 |
+| AI 引擎 | DeepSeek API（OpenAI SDK） | deepseek-chat / openai 2.41 |
 | 数据库 | SQLite | — |
-| 文件解析 | pdfplumber + python-docx | — |
+| 文件解析 | pdfplumber + python-docx | pdfplumber 0.11 / python-docx 1.2 |
 
 ## 架构设计
 
