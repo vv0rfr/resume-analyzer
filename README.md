@@ -12,17 +12,28 @@ AI 驱动的简历分析与岗位智能匹配工具。上传简历 → AI 解析
 
 ---
 
-## 快速体验
+## 本地运行
+
+需要 Python 3.14+、Node.js 22+ 和 DeepSeek API Key。
 
 ```bash
-# 后端
-cd backend && venv/Scripts/activate && uvicorn app.main:app --port 8010 --reload
+# 1. 后端
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env  # 编辑 .env 填入 DEEPSEEK_API_KEY
+uvicorn app.main:app --port 8010 --reload
 
-# 前端
-cd frontend && npm run dev
+# 2. 前端（新开终端）
+cd frontend
+npm install
+npm run dev
 ```
 
 浏览器打开 `http://localhost:5173`，API 文档 `http://localhost:8010/docs`
+
+> 暂未提供在线 Demo（后端依赖 API Key 无法公开部署）。如有需要可联系我录制演示视频。
 
 ---
 
